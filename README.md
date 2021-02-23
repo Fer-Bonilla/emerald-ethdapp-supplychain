@@ -104,20 +104,39 @@ To understand project class organization and contract implementation we need to 
 
 We use openzeppely library to implements accesscontrol and ownable contracts for an easy role and authorization management. The development uses Truffle framework, web3 to interact with the contract and `truffle-hd-wallet-provider` to sign transactions for addresses.
 
- - ![Oppenzeppelin]: (https://docs.openzeppelin.com/openzeppelin/)
- - ![Truffle]: (https://www.trufflesuite.com/)
- - ![web3]: (https://web3js.readthedocs.io/en/v1.3.0/)
+ - Oppenzeppelin: (https://docs.openzeppelin.com/openzeppelin/)
+ - Truffle: (https://www.trufflesuite.com/)
+ - web3: (https://web3js.readthedocs.io/en/v1.3.0/)
 
 ## IPFS
 
 IPFS is not used in this Dapp version.
 
-![IPFS]: (https://ipfs.io/)
+IPFS: (https://ipfs.io/)
 
 
-## Contracts deployment on the Rinkeby test network 
+## Contracts deployment on Kovan test network 
 
-To deply the contratcs on Rinkeby network is neccessaty setup the 
+To deply the contratcs on Rinkeby network, is neccessaty setup the truffle-config.js file with this:
+
+    ```
+    kovan: {
+      // must be a thunk, otherwise truffle commands may hang in CI
+      provider: () =>
+        new HDWalletProvider({
+          mnemonic: {
+            phrase: mnemonicPhrase
+          },
+          providerOrUrl: infuraKovan,
+          gas: 5500000,    
+          confirmations: 2,
+          timeoutBlocks: 200,
+          skipDryRun: true, 
+          shareNonce: true
+        }),
+      network_id: '42',
+    }
+    ```
 
 The adress for the supplychaon contract on the rinkeby network is:
 
