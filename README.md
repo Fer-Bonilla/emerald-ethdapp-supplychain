@@ -1,10 +1,17 @@
 <p align="center">
-   <a href="https://docs.soliditylang.org/en/v0.7.4/">
-      <img src="https://img.shields.io/badge/Solidity-0.7.4-green.svg?style=flat" alt="Solidity 0.7.4">
-      <img src="https://img.shields.io/badge/Node.js-12.16.2-green.svg?style=flat" alt="Solidity 0.7.4">
-      <img src="https://img.shields.io/badge/Truffle-5.1.58-green.svg?style=flat" alt="Solidity 0.7.4">
-      <img src="https://img.shields.io/badge/Web3.js-0.7.4-green.svg?style=flat" alt="Solidity 0.7.4">
+   <a href="https://docs.soliditylang.org/en/v0.7.6/">
+      <img src="https://img.shields.io/badge/Solidity-0.7.6-green.svg?style=flat" alt="Solidity 0.7.6">
    </a>
+   <a href="https://docs.soliditylang.org/en/v0.7.6/">
+      <img src="https://img.shields.io/badge/Node.js-12.16.2-green.svg?style=flat" alt="Node-js 12.16.2">
+   </a>
+   <a href="https://www.trufflesuite.com/">      
+      <img src="https://img.shields.io/badge/Truffle-5.1.67-green.svg?style=flat" alt="Truffle 5.1.67">
+   </a>
+   <a href="https://web3js.readthedocs.io/en/v1.3.0/">      
+      <img src="https://img.shields.io/badge/Web3.js-1.2.9-green.svg?style=flat" alt="Web3.js 1.2.9">
+   </a>
+
 </p>
 
 # Emeralds supplychain Dapp
@@ -97,14 +104,15 @@ To understand project class organization and contract implementation we need to 
 
 We use openzeppely library to implements accesscontrol and ownable contracts for an easy role and authorization management. The development uses Truffle framework, web3 to interact with the contract and `truffle-hd-wallet-provider` to sign transactions for addresses.
 
-![Oppenzeppelin]: https://docs.openzeppelin.com/openzeppelin/ 
-![Truffle]: https://www.trufflesuite.com/
-![web3]: https://web3js.readthedocs.io/en/v1.3.0/
+ - ![Oppenzeppelin]: (https://docs.openzeppelin.com/openzeppelin/)
+ - ![Truffle]: (https://www.trufflesuite.com/)
+ - ![web3]: (https://web3js.readthedocs.io/en/v1.3.0/)
 
 ## IPFS
-IPFS is used as a decentralized repository to save the emeralds-related files.
 
-![IPFS]: https://ipfs.io/
+IPFS is not used in this Dapp version.
+
+![IPFS]: (https://ipfs.io/)
 
 
 ## Contracts deployment on the Rinkeby test network 
