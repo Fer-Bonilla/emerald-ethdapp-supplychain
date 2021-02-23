@@ -1,10 +1,17 @@
 <p align="center">
-   <a href="https://docs.soliditylang.org/en/v0.7.4/">
-      <img src="https://img.shields.io/badge/Solidity-0.7.4-green.svg?style=flat" alt="Solidity 0.7.4">
-      <img src="https://img.shields.io/badge/Node.js-12.16.2-green.svg?style=flat" alt="Solidity 0.7.4">
-      <img src="https://img.shields.io/badge/Truffle-5.1.58-green.svg?style=flat" alt="Solidity 0.7.4">
-      <img src="https://img.shields.io/badge/Web3.js-0.7.4-green.svg?style=flat" alt="Solidity 0.7.4">
+   <a href="https://docs.soliditylang.org/en/v0.7.6/">
+      <img src="https://img.shields.io/badge/Solidity-0.7.6-green.svg?style=flat" alt="Solidity 0.7.6">
    </a>
+   <a href="https://docs.soliditylang.org/en/v0.7.6/">
+      <img src="https://img.shields.io/badge/Node.js-12.16.2-green.svg?style=flat" alt="Node-js 12.16.2">
+   </a>
+   <a href="https://www.trufflesuite.com/">      
+      <img src="https://img.shields.io/badge/Truffle-5.1.67-green.svg?style=flat" alt="Truffle 5.1.67">
+   </a>
+   <a href="https://web3js.readthedocs.io/en/v1.3.0/">      
+      <img src="https://img.shields.io/badge/Web3.js-1.2.9-green.svg?style=flat" alt="Web3.js 1.2.9">
+   </a>
+
 </p>
 
 # Emeralds supplychain Dapp
@@ -97,152 +104,71 @@ To understand project class organization and contract implementation we need to 
 
 We use openzeppely library to implements accesscontrol and ownable contracts for an easy role and authorization management. The development uses Truffle framework, web3 to interact with the contract and `truffle-hd-wallet-provider` to sign transactions for addresses.
 
-![Oppenzeppelin]: https://docs.openzeppelin.com/openzeppelin/ 
-![Truffle]: https://www.trufflesuite.com/
-![web3]: https://web3js.readthedocs.io/en/v1.3.0/
+ - Oppenzeppelin: (https://docs.openzeppelin.com/openzeppelin/)
+ - Truffle: (https://www.trufflesuite.com/)
+ - web3: (https://web3js.readthedocs.io/en/v1.3.0/)
 
 ## IPFS
-IPFS is used as a decentralized repository to save the emeralds-related files.
 
-![IPFS]: https://ipfs.io/
+IPFS is not used in this Dapp version.
 
-
-## Contracts deployment on the Rinkeby test network 
-
-To deply the contratcs on Rinkeby network is neccessaty setup the 
-
-The adress for the supplychaon contract on the rinkeby network is:
+IPFS: (https://ipfs.io/)
 
 
+## Contracts deployment to Kovan test network 
+
+To deploy the contratcs on Rinkeby network, it's neccessary setup the truffle-config.js file with this:
+
+    ```
+    kovan: {
+      // must be a thunk, otherwise truffle commands may hang in CI
+      provider: () =>
+        new HDWalletProvider({
+          mnemonic: {
+            phrase: mnemonicPhrase
+          },
+          providerOrUrl: infuraKovan,
+          gas: 5500000,    
+          confirmations: 2,
+          timeoutBlocks: 200,
+          skipDryRun: true, 
+          shareNonce: true
+        }),
+      network_id: '42',
+    }
+    ```
+
+**The adress for the supplychaon contract on the rinkeby network is:** 0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
+**Link to Etherscan:** https://kovan.etherscan.io/tx/0x7a984f8179eb26fafe67d6620f5412e603189c0d02317599d522fac8c54f0cb8
+
+## Deployment log
+   ```
+   ======================
+   > Network name:    'kovan'
+   > Network id:      42
+   > Block gas limit: 12500000 (0xbebc20)
+   ```
+
+   ```
+   1_initial_migration.js
+   ======================
+
+      Deploying 'Migrations'
+      ----------------------
+      > transaction hash:    0x5e823a9832899b94c9a3469f1145a4b16237870aada6db711517014c53472dca
+      > Blocks: 1            Seconds: 12
+      > contract address:    0xB09E439d7D04637Bf1897b70e07CccCcBf77e292     
+      > block number:        23618366
+      > block timestamp:     1614109664
+      > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95     
+      > balance:             1.761500462
+      > gas used:            168490 (0x2922a)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.0033698 ETH
+   ```
 
 
-
-
-
-
-## Contract address on the (Etherscan):
-https://rinkeby.etherscan.io/address/0x1d4396d3dfdfffb57e2ae580f175e7dfcf08759a
-
-## Transaction ID and contract address
-
-======================
-> Network name:    'rinkeby'
-> Network id:      4
-> Block gas limit: 0x989677
-
-
-1_initial_migration.js
-======================
-
-   Deploying 'Migrations'
-   ----------------------
-   > transaction hash:    0x1a02bb12fc80417e2ad1bd56250775110126d74e48fbb03041ae98b24ff92052
-   > Blocks: 1            Seconds: 21
-   > contract address:    0x302cfAe2e65F6651f3fDB5fAe6f635ca62CA567b
-   > block number:        5625069
-   > block timestamp:     1576515319
-   > account:             0x1D4396D3DfdFFFB57e2Ae580f175E7DFCf08759A
-   > balance:             0.97167573
-   > gas used:            238594
-   > gas price:           10 gwei
-   > value sent:          0 ETH
-   > total cost:          0.00238594 ETH
-
-
-   > Saving migration to chain.
-   > Saving artifacts
-   -------------------------------------
-   > Total cost:          0.00238594 ETH
-
-
-2_deploy_contracts.js
-=====================
-
-   Deploying 'FarmerRole'
-   ----------------------
-   > transaction hash:    0x79b84bba9672baeb0181fa97016e03510903903052a19f4a4a6f0168627ef9ca
-   > Blocks: 1            Seconds: 12
-   > contract address:    0xa041c902B5E6a8a83c9A3cf6D55C65183eb2462f
-   > block number:        5625071
-   > block timestamp:     1576515349
-   > account:             0x1D4396D3DfdFFFB57e2Ae580f175E7DFCf08759A
-   > balance:             0.96674205
-   > gas used:            451020
-   > gas price:           10 gwei
-   > value sent:          0 ETH
-   > total cost:          0.0045102 ETH
-
-
-   Deploying 'DistributorRole'
-   ---------------------------
-   > transaction hash:    0xf245353475ad170ce060d54680cb2003f8abf9ecdef52db245791b3ca9f79b41
-   > Blocks: 0            Seconds: 9
-   > contract address:    0xaf1624F9BA8972070eE42311684BE921000355b1
-   > block number:        5625072
-   > block timestamp:     1576515364
-   > account:             0x1D4396D3DfdFFFB57e2Ae580f175E7DFCf08759A
-   > balance:             0.96223113
-   > gas used:            451092
-   > gas price:           10 gwei
-   > value sent:          0 ETH
-   > total cost:          0.00451092 ETH
-
-
-   Deploying 'RetailerRole'
-   ------------------------
-   > transaction hash:    0xec3342fef968e5791df950cf6e1ba8b037d348b11f26e8f5a58f2cb41e6523fe
-   > Blocks: 0            Seconds: 9
-   > contract address:    0xaf4Cb7bb1ED23FA76f18E34261BE81584Bc6c792
-   > block number:        5625073
-   > block timestamp:     1576515379
-   > account:             0x1D4396D3DfdFFFB57e2Ae580f175E7DFCf08759A
-   > balance:             0.95772033
-   > gas used:            451080
-   > gas price:           10 gwei
-   > value sent:          0 ETH
-   > total cost:          0.0045108 ETH
-
-
-   Deploying 'ConsumerRole'
-   ------------------------
-   > transaction hash:    0x0346a0f1176aacbc2f70d695d25d3ff0bc2b2c5b7b29257e530a3c63510a595a
-   > Blocks: 0            Seconds: 7
-   > contract address:    0x59Fb032D660d3830Ec24729D6A57286c8Cef0dd8
-   > block number:        5625074
-   > block timestamp:     1576515394
-   > account:             0x1D4396D3DfdFFFB57e2Ae580f175E7DFCf08759A
-   > balance:             0.95320977
-   > gas used:            451056
-   > gas price:           10 gwei
-   > value sent:          0 ETH
-   > total cost:          0.00451056 ETH
-
-
-   Deploying 'SupplyChain'
-   -----------------------
-   > transaction hash:    0x33d25ff003526fa072304b4fcb2921d8e160c37b3cd70292d6a842cf6cecbb49
-   > Blocks: 1            Seconds: 10
-   > contract address:    0x66c0486577009EC26A9429B1E38657Ba0fa5c2B0
-   > block number:        5625075
-   > block timestamp:     1576515409
-   > account:             0x1D4396D3DfdFFFB57e2Ae580f175E7DFCf08759A
-   > balance:             0.92025103
-   > gas used:            3295874
-   > gas price:           10 gwei
-   > value sent:          0 ETH
-   > total cost:          0.03295874 ETH
-
-
-   > Saving migration to chain.
-   > Saving artifacts
-   -------------------------------------
-   > Total cost:          0.05100122 ETH
-
-
-Summary
-=======
-> Total deployments:   6
-> Final cost:          0.05338716 ETH
 
 ## Getting Started
 
