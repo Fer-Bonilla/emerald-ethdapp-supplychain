@@ -115,9 +115,30 @@ IPFS is not used in this Dapp version.
 IPFS: (https://ipfs.io/)
 
 
+## Installing 
+
+Clone this repository
+
+      ```
+      git clone https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain
+      ```
+
+change the directory to emerald-ethdapp-supplychain and install all requisite npm packages 
+
+      ```
+      cd emerald-ethdapp-supplychain
+      npm install
+      ```
+
+Launch Ganache:
+
+      ```
+      ganache-cli -m "spirit supply whale amount human item harsh scare congress discover talent hamster"
+      ```
+
 ## Contracts deployment to Kovan test network 
 
-To deploy the contratcs on Rinkeby network, it's neccessary setup the truffle-config.js file with this:
+To deploy the contratcs on Kovan network, it's neccessary setup the truffle-config.js file with this:
 
     ```
     kovan: {
@@ -138,18 +159,21 @@ To deploy the contratcs on Rinkeby network, it's neccessary setup the truffle-co
     }
     ```
 
+Your terminal should look something like this:
+
+![ganache-cli](https://github.com/Fer-Bonilla/emeralds-supplychain-dapp/blob/main/images/ganache-cli.png)
+
 **The adress for the supplychaon contract on the rinkeby network is:** 0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
 **Link to Etherscan:** https://kovan.etherscan.io/tx/0x7a984f8179eb26fafe67d6620f5412e603189c0d02317599d522fac8c54f0cb8
 
-## Deployment log
-   ```
+### Deploying migrations
+```
    ======================
    > Network name:    'kovan'
    > Network id:      42
    > Block gas limit: 12500000 (0xbebc20)
-   ```
-
-   ```
+```
+```
    1_initial_migration.js
    ======================
 
@@ -166,9 +190,166 @@ To deploy the contratcs on Rinkeby network, it's neccessary setup the truffle-co
       > gas price:           20 gwei
       > value sent:          0 ETH
       > total cost:          0.0033698 ETH
-   ```
+      > 
+      > Saving migration to chain.
+      > Saving artifacts
+      -------------------------------------
+      > Total cost:           0.0033698 ETH
+```
+
+### Deploying contracts
+
+```
+2_deploy_contracts.js
+=====================
+
+   Deploying 'CustomerRole'
+   ------------------------
+   > transaction hash:    0xc6c7aa847ddd203625a745cdef5f9c5b004adeff11ada1a8e18faa331791ac2c
+   > Blocks: 2            Seconds: 12
+   > contract address:    0x9e52D8Eafc46fB48FeDa1566995204759e62bE4E     
+   > block number:        23618371
+   > block timestamp:     1614109692
+   > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95     
+   > balance:             1.747312982
+   > gas used:            667095 (0xa2dd7)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0133419 ETH
 
 
+   Deploying 'CustodianRole'
+   -------------------------
+   > transaction hash:    0x4b0efebbf529db1a1a6cab828511c3e8e2263ac317b32acff3c3f01de7aeebaa
+   > Blocks: 1            Seconds: 10
+   > contract address:    0x6ccb74f73f4F518e7b60c017fD4b0956AeE7C138     
+   > block number:        23618374
+   > block timestamp:     1614109708
+   > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95     
+   > balance:             1.733971802
+   > gas used:            667059 (0xa2db3)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01334118 ETH
+
+
+   Deploying 'LaboratoryRole'
+   --------------------------
+   > transaction hash:    0x72c3ab5d4d35899bba0430dcc5116a689ed0e1bca1fb39b86e96a348066a2194
+   > Blocks: 1            Seconds: 8
+   > contract address:    0xB1010deAF9287235264808921ad953e6F703c536     
+   > block number:        23618377
+   > block timestamp:     1614109724
+   > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95     
+   > balance:             1.720630862
+   > gas used:            667047 (0xa2da7)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01334094 ETH
+
+
+   Deploying 'ManufacturerRole'
+   ----------------------------
+   > transaction hash:    0x2df3ed46a3d3dea463103f43382915338e94c0f7eb55151f5d2d387fc142beaf
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x8BeCC9336c6a9efEAB4D3112ed2A043d7963D899     
+   > block number:        23618380
+   > block timestamp:     1614109740
+   > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95     
+   > balance:             1.707287282
+   > gas used:            667179 (0xa2e2b)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01334358 ETH
+
+
+   Deploying 'MinerRole'
+   ---------------------
+   > transaction hash:    0x39373d7446b83e0adcdd20c917585f516b6e8dadaac8653b90166c92878456a8
+   > Blocks: 1            Seconds: 8
+   > contract address:    0x6708966d8E6B4B312eb40C8B6EFc29595D7eAE22     
+   > block number:        23618383
+   > block timestamp:     1614109756
+   > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95     
+   > balance:             1.694255962
+   > gas used:            651566 (0x9f12e)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01303132 ETH
+
+
+   Deploying 'Emerald'
+   -------------------
+   > transaction hash:    0x393e4fcbd685347a0c274d43c1f3a01ea89e69ecd806392e379624dac3e7aa74
+   > Blocks: 3            Seconds: 12
+   > contract address:    0x864175F6267785d0371495eaeBc2eB6437C79Bf8     
+   > block number:        23618386
+   > block timestamp:     1614109772
+   > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95     
+   > balance:             1.675182962
+   > gas used:            953650 (0xe8d32)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.019073 ETH
+
+
+   Deploying 'EmeraldProperties'
+   -----------------------------
+   > transaction hash:    0x9727938a73299492a3df58b38bf812f9483e60cf92fdfb9d15dc52a3b5199e67
+   > Blocks: 2            Seconds: 12
+   > contract address:    0x2B06a855144963710c4B6c375AD5A2e35B3983d9     
+   > block number:        23618389
+   > block timestamp:     1614109788
+   > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95     
+   > balance:             1.669427102
+   > gas used:            287793 (0x46431)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00575586 ETH
+
+
+   Deploying 'EmeraldStates'
+   -------------------------
+   > transaction hash:    0xb69c874fa94a8b3550a6a0e929c44f91a73352b742c20009eede21d3c820d873
+   > Blocks: 3            Seconds: 12
+   > contract address:    0x6153F64891F9c7586d1e239018408D3bB8CAe8F0     
+   > block number:        23618392
+   > block timestamp:     1614109804
+   > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95     
+   > balance:             1.668085782
+   > gas used:            67066 (0x105fa)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00134132 ETH
+
+
+   Deploying 'SupplyChain'
+   -----------------------
+   > transaction hash:    0x7ac8c0eec02b6069d2e4f9d898973b1a1734ef55ab947ec79f53581e3ef4ecaa
+   > Blocks: 3            Seconds: 12
+   > contract address:    0x5298849E13c020D24F8eD7efAF927149C6C1ddFc     
+   > block number:        23618395
+   > block timestamp:     1614109820
+   > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95     
+   > balance:             1.555398042
+   > gas used:            5634387 (0x55f953)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.11268774 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.20525684 ETH
+
+
+Summary
+=======
+> Total deployments:   10
+> Final cost:          0.20862664 ETH
+
+```
 
 ## Getting Started
 
