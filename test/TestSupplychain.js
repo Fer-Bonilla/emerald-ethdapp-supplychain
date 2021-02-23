@@ -66,8 +66,6 @@ contract('SupplyChain', async accounts => {
     it("Testing smart contract function extractEmerald() that allows a Miner to extract emeralds", async() => {
         const supplyChain = await SupplyChain.deployed()
         
-        //supplyChain.addMiner(originMinerID);
-
         // Declare and Initialize a variable for event
         var eventEmitted = false;
 
@@ -107,7 +105,7 @@ contract('SupplyChain', async accounts => {
     })    
 
     // 2nd Test
-    it("Testing smart contract function scaleEmerald() that allows a Miner Scale and refister emerald information", async() => {
+    it("Testing smart contract function scaleEmerald() that allows a Miner Scale and register emerald information", async() => {
         const supplyChain = await SupplyChain.deployed()
         
         // Declare and Initialize a variable for event
@@ -158,7 +156,6 @@ contract('SupplyChain', async accounts => {
         const resultBufferTwo = await supplyChain.fetchItemBufferTwo.call(upc);
         const decodeDetailedData = Web3EthAbi.decodeParameters(['uint','uint','uint','uint','uint','address','address','address','address'],resultBufferTwo);        
         
-        //console.log(decodeDetailedData)
         // Verify the result set
         assert.equal(decodeDetailedData[4], 2, 'Error: Invalid Emerald State')
         assert.equal(eventEmitted, true, 'Invalid event emitted')
@@ -166,7 +163,7 @@ contract('SupplyChain', async accounts => {
     })    
 
     // 4th Test
-    it("Testing smart contract function shipToLaboratory() that allows a Miner send the packech Emerald to Lab for certification", async() => {
+    it("Testing smart contract function shipToLaboratory() that allows a Miner send the packed Emerald to Lab for certification", async() => {
         const supplyChain = await SupplyChain.deployed()
         
         // Declare and Initialize a variable for event
@@ -194,7 +191,7 @@ contract('SupplyChain', async accounts => {
     })    
 
     // 5th Test
-    it("Testing smart contract function laboratoryReceived() that allows a Lab certified an emeralds properties", async() => {
+    it("Testing smart contract function laboratoryReceived() that allows a Laboratory confirm emeralds reception", async() => {
         const supplyChain = await SupplyChain.deployed()
         
         // Declare and Initialize a variable for event
@@ -251,7 +248,7 @@ contract('SupplyChain', async accounts => {
     })    
 
     // 7th Test
-    it("Testing smart contract function shipToSecureStore() that allows a laboratory send a certified emerald to an authorizad custodian", async() => {
+    it("Testing smart contract function shipToSecureStore() that allows a laboratory ship a certified emerald to an authorized custodian", async() => {
         const supplyChain = await SupplyChain.deployed()
         
         // Declare and Initialize a variable for event
@@ -308,7 +305,7 @@ contract('SupplyChain', async accounts => {
     })    
 
     // 9th Test
-    it("Testing smart contract function StoreEmerald() that allows a custodian confirm to the Owner tha a certified emerald was stored", async() => {
+    it("Testing smart contract function StoreEmerald() that allows a custodian confirm to the Emerald Owner that a certified emerald was stored", async() => {
         const supplyChain = await SupplyChain.deployed()
         
         // Declare and Initialize a variable for event
@@ -337,7 +334,7 @@ contract('SupplyChain', async accounts => {
     })  
 
     // 10th Test
-    it("Testing smart contract function registerForSale() that allows an emerald owner register the stored emerald for sale afeter custodian confirmation", async() => {
+    it("Testing smart contract function registerForSale() that allows an emerald owner register the stored emerald for sale after custodian confirmation", async() => {
         const supplyChain = await SupplyChain.deployed()
         
         // Declare and Initialize a variable for event
@@ -396,7 +393,7 @@ contract('SupplyChain', async accounts => {
     })  
 
     // 12th Test
-    it("Testing smart contract function shipToManufacturer() that allows a custodian sent to a manufacturer a buyed emerald", async() => {
+    it("Testing smart contract function shipToManufacturer() that allows a custodian send to a manufacturer a buyed emerald", async() => {
         const supplyChain = await SupplyChain.deployed()
         
         // Declare and Initialize a variable for event
@@ -505,7 +502,6 @@ contract('SupplyChain', async accounts => {
         const resultBufferTwo = await supplyChain.fetchItemBufferTwo.call(upc);
         const decodeDetailedData = Web3EthAbi.decodeParameters(['uint','uint','uint','uint','uint','address','address','address','address'],resultBufferTwo);        
         
-        //console.log(decodeDetailedData)
         // Verify the result set
         assert.equal(decodeDetailedData[4], 14, 'Error: Invalid Emerald State')
         assert.equal(eventEmitted, true, 'Invalid event emitted')
@@ -535,7 +531,6 @@ contract('SupplyChain', async accounts => {
         const resultBufferTwo = await supplyChain.fetchItemBufferTwo.call(upc);
         const decodeDetailedData = Web3EthAbi.decodeParameters(['uint','uint','uint','uint','uint','address','address','address','address'],resultBufferTwo);        
         
-        //console.log(decodeDetailedData)
         // Verify the result set
         assert.equal(decodeDetailedData[4], 15, 'Error: Invalid Emerald State')
         assert.equal(eventEmitted, true, 'Invalid event emitted')
@@ -565,7 +560,6 @@ contract('SupplyChain', async accounts => {
         const resultBufferTwo = await supplyChain.fetchItemBufferTwo.call(upc);
         const decodeDetailedData = Web3EthAbi.decodeParameters(['uint','uint','uint','uint','uint','address','address','address','address'],resultBufferTwo);        
         
-        //console.log(decodeDetailedData)
         // Verify the result set
         assert.equal(decodeDetailedData[4], 16, 'Error: Invalid Emerald State')
         assert.equal(eventEmitted, true, 'Invalid event emitted')
@@ -594,7 +588,6 @@ contract('SupplyChain', async accounts => {
         const resultBufferTwo = await supplyChain.fetchItemBufferTwo.call(upc);
         const decodeDetailedData = Web3EthAbi.decodeParameters(['uint','uint','uint','uint','uint','address','address','address','address'],resultBufferTwo);        
         
-        //console.log(decodeDetailedData)
         // Verify the result set
         assert.equal(decodeDetailedData[4], 17, 'Error: Invalid Emerald State')
         assert.equal(eventEmitted, true, 'Invalid event emitted')
@@ -602,7 +595,7 @@ contract('SupplyChain', async accounts => {
     })
     
     // 19th Test
-    it("Testing smart contract function deliverToCustomer() that allows a Manufacturer ship an buyed emerald to a customermer", async() => {
+    it("Testing smart contract function deliverToCustomer() that allows a Manufacturer ship a buyed emerald to a customermer", async() => {
         const supplyChain = await SupplyChain.deployed()
         
         // Declare and Initialize a variable for event
@@ -623,7 +616,6 @@ contract('SupplyChain', async accounts => {
         const resultBufferTwo = await supplyChain.fetchItemBufferTwo.call(upc);
         const decodeDetailedData = Web3EthAbi.decodeParameters(['uint','uint','uint','uint','uint','address','address','address','address'],resultBufferTwo);        
         
-        //console.log(decodeDetailedData)
         // Verify the result set
         assert.equal(decodeDetailedData[4], 18, 'Error: Invalid Emerald State')
         assert.equal(eventEmitted, true, 'Invalid event emitted')
