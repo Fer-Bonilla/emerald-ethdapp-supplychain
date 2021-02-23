@@ -1,0 +1,8 @@
+{
+  "short_name": "Emerald supplychain Daap",
+  "name": "Emerald supplychain Daap",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
