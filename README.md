@@ -161,7 +161,7 @@ To deploy the contratcs on Kovan network, it's neccessary setup the truffle-conf
 
 Your terminal should look something like this:
 
-![ganache-cli](https://github.com/Fer-Bonilla/emeralds-supplychain-dapp/blob/main/images/ganache-cli.png)
+![Ganache-cli](https://github.com/Fer-Bonilla/emeralds-supplychain-dapp/blob/main/images/ganache-cli.png)
 
 **The adress for the supplychaon contract on the rinkeby network is:** 0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
 **Link to Etherscan:** https://kovan.etherscan.io/tx/0x7a984f8179eb26fafe67d6620f5412e603189c0d02317599d522fac8c54f0cb8
