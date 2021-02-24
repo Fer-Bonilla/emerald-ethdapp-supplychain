@@ -71,115 +71,115 @@ contract SupplyChain is Ownable, AccessControl, MinerRole, LaboratoryRole, Custo
     msg.sender.transfer(amountToReturn);
   }
 
-  // Define a modifier that checks if an item.state of a upc is Mined
+  // Checks if a emerald is Mined
   modifier mined(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.Mined);
     _;
   }
 
-  //Define a modifier that checks if an item.state of a upc is Processed
+  //Checks if an emerald was escaled
   modifier scaled(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.Scaled);
     _;
   }
   
-  //Define a modifier that checks if an item.state of a upc is Packed
+  //Checks if an emerald is packed
   modifier packedForLab(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.PackedForLab);
     _;
   }
 
-  // Define a modifier that checks if an item.state of a upc is ForSale
+  // Checks if an emerald was shipped to the laboratory
   modifier shipedToLab(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.ShipedToLab);
     _;
   }
 
-  // Define a modifier that checks if an item.state of a upc is Sold
+  // Checks if an emerald was received by the Laboratory
   modifier labReceived(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.LabReceived);
     _;
   }
   
-  // Define a modifier that checks if an item.state of a upc is Shipped
+  // Checks if an emerald was certified by the laboratory
   modifier certified(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.Certified);
     _;
   }
 
-  // Define a modifier that checks if an item.state of a upc is Received
+  // Checks if an emerald was shipped to the storage y the laboratory
   modifier shippedToStore(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.ShippedToStore);
     _;
   }
 
-  // Define a modifier that checks if an item.state of a upc is Received
+  // Checks if an emerald was received by the custodian service
   modifier storageReceived(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.StorageReceived);
     _;
   }  
 
-  // Define a modifier that checks if an item.state of a upc is Purchased
+  // Checks if an emerald was stored by the custodian
   modifier stored(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.Stored);
     _;
   }
 
-  // Define a modifier that checks if an item.state of a upc is Mined
+  // Checks if a raw emerald is available for sale
   modifier forSale(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.ForSale);
     _;
   }
 
-  // Define a modifier that checks if an item.state of a upc is Processed
+  // Checks if a raw emerald was sold
   modifier sold(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.Sold);
     _;
   }
   
-  // Define a modifier that checks if an item.state of a upc is Packed
+  // Checks if a sold emerald was shipped to the buyer
   modifier shiptoManufacture(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.ShipToManufacture);
     _;
   }
 
-  // Define a modifier that checks if an item.state of a upc is Packed
+  // Checks if an emerald was received by the manufacturer
   modifier manufacturerReceived(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.ManufacturerReceived);
     _;
   }
 
-  // Define a modifier that checks if an item.state of a upc is ForSale
+  // Checks if an emerald was proccesed by the manufacturer
   modifier manufactured(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.Manufactured);
     _;
   }
 
-  //Define a modifier that checks if an item.state of a upc is Sold
+  // Checks if a cut emerald was packed
   modifier packedForSale(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.PackedForSale);
     _;
   }
   
-  // Define a modifier that checks if an emerald.state of a upc is ShPublishedipped
+  // Checks if an proccesed emerald is ready for sale
   modifier published(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.Published);
     _;
   }
 
-  // Define a modifier that checks if an emerald.state of a upc is Buyed
+  // Checks if a proccesed emerald was purshased
   modifier buyed(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.Buyed);
     _;
   }
 
-  // Define a modifier that checks if an emerald.state of a upc is ShippedToClient
+  // Checks if a cut emerald was shipped to the buyer
   modifier shippedToCustomer(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.ShippedToCustomer);
     _;
   }
 
-  // Define a modifier that checks if an emerald.state of a upc is Delivered
+  // Checks if a cut emerald was received by the customer
   modifier delivered(uint _upc) {
     require(emeralds[_upc].GetEmeraldState() == EmeraldStates.State.Delivered);
     _;
@@ -200,7 +200,7 @@ contract SupplyChain is Ownable, AccessControl, MinerRole, LaboratoryRole, Custo
     selfdestruct(msg.sender);
   }
 
-  // Define a function 'extractItem' that allows a farmer to mark an item 'Harvested'
+  // Define a function 'extractItem' that allows a Miner to mark an emerald as 'Mined'
   function extractEmerald(
     uint _sku,
     uint _upc,
@@ -239,7 +239,7 @@ contract SupplyChain is Ownable, AccessControl, MinerRole, LaboratoryRole, Custo
     
   }
 
-  // Define a function 'scaleItem' that allows a Miner to mark an item 'Processed'
+  // Define a function 'scaleItem' that allows Miner to mark an item as 'Scaled'
   function scaleEmerald(
     uint _upc,
     string memory _scaleInfo 
@@ -398,7 +398,7 @@ contract SupplyChain is Ownable, AccessControl, MinerRole, LaboratoryRole, Custo
     emit Stored(_upc);
   }
 
-  // Define a function 'shipToLaboratory' that allows a Miner to mark an item 'ShipToLab'
+  // Define a function 'registerForSale' that allows a Miner to mark an item 'ForSale'
   function registerForSale(uint _upc, uint _marketPrice)
     public 
     // Call modifier to check if upc has passed previous supply chain stage
@@ -418,9 +418,7 @@ contract SupplyChain is Ownable, AccessControl, MinerRole, LaboratoryRole, Custo
     emit ForSale(_upc);
   }
 
-  // Define a function 'buyItem' that allows the disributor to mark an item 'Sold'
-  // Use the above defined modifiers to check if the item is available for sale, if the buyer has paid enough, 
-  // and any excess ether sent is refunded back to the buyer
+  // Define a function 'buyItem' that allows the Manufacturer to mark an item 'Sold'
   function buyFromMiner(uint _upc) public payable 
     // Call modifier to check if upc has passed previous supply chain stage
     forSale(_upc)
@@ -449,8 +447,7 @@ contract SupplyChain is Ownable, AccessControl, MinerRole, LaboratoryRole, Custo
     
   }
 
-  // Define a function 'shipItem' that allows the distributor to mark an item 'Shipped'
-  // Use the above modifers to check if the item is sold
+  // Define a function 'shipItem' that allows laboratory confirm that the emerald was shipped
   function shipToManufacturer(uint _upc) public 
     // Call modifier to check if upc has passed previous supply chain stage
     sold(_upc)
@@ -464,8 +461,7 @@ contract SupplyChain is Ownable, AccessControl, MinerRole, LaboratoryRole, Custo
     emit ShipToManufacture(_upc);    
   }
 
-  // Define a function 'receiveItem' that allows the retailer to mark an item 'Received'
-  // Use the above modifiers to check if the item is shipped
+  // Define a function 'receiveFromStorage' that allows the manufacturer mark an item 'ManufacturerReceived'
   function receiveFromStorage(uint _upc) public 
     // Call modifier to check if upc has passed previous supply chain stage
     shiptoManufacture(_upc)
@@ -479,8 +475,7 @@ contract SupplyChain is Ownable, AccessControl, MinerRole, LaboratoryRole, Custo
     emit ManufacturerReceived(_upc);    
   }
 
-  // Define a function 'purchaseItem' that allows the consumer to mark an item 'Purchased'
-  // Use the above modifiers to check if the item is received
+  // Define a function 'manufactureEmerald' that allows the manufacturer to mark an item 'Manufactured'
   function manufactureEmerald(
     uint _upc,
     string memory _manofactureInfo
@@ -500,8 +495,7 @@ contract SupplyChain is Ownable, AccessControl, MinerRole, LaboratoryRole, Custo
     emit Manufactured(_upc);    
   }
 
-  // Define a function 'purchaseItem' that allows the consumer to mark an item 'Purchased'
-  // Use the above modifiers to check if the item is received
+  // Define a function 'packCutEmerald' that allows the manufacturer to mark an emerald 'PackedForSale'
   function packCutEmerald(uint _upc) public 
     // Call modifier to check if upc has passed previous supply chain stage
     manufactured(_upc)
@@ -514,8 +508,7 @@ contract SupplyChain is Ownable, AccessControl, MinerRole, LaboratoryRole, Custo
     emit PackedForSale(upc);    
   }
 
-  // Define a function 'purchaseItem' that allows the consumer to mark an item 'Purchased'
-  // Use the above modifiers to check if the item is received
+  // Define a function 'publishEmerald' that allows the manufacturer to mark an item 'Published'
   function publishEmerald(uint _upc, uint _marketPrice) public 
     // Call modifier to check if upc has passed previous supply chain stage
     packedForSale(_upc)
@@ -531,8 +524,7 @@ contract SupplyChain is Ownable, AccessControl, MinerRole, LaboratoryRole, Custo
     emit Published(_upc);    
   }
 
-  // Define a function 'purchaseItem' that allows the consumer to mark an item 'Purchased'
-  // Use the above modifiers to check if the item is received
+  // Define a function 'buyFromManufacturer' that allows the manufacturer to mark an item 'Buyed'
   function buyFromManufacturer(uint _upc) public payable
     // Call modifier to check if upc has passed previous supply chain stage
     published(_upc)
@@ -560,8 +552,7 @@ contract SupplyChain is Ownable, AccessControl, MinerRole, LaboratoryRole, Custo
     emit Buyed(_upc);    
   }
 
-  // Define a function 'purchaseItem' that allows the consumer to mark an item 'Purchased'
-  // Use the above modifiers to check if the item is received
+  // Define a function 'shipEmeraldToCustomer' that allows the consumer to mark an item 'ShippedToCustomer'
   function shipEmeraldToCustomer(uint _upc) public 
     // Call modifier to check if upc has passed previous supply chain stage
     buyed(_upc)
@@ -575,7 +566,7 @@ contract SupplyChain is Ownable, AccessControl, MinerRole, LaboratoryRole, Custo
     emit ShippedToCustomer(_upc);    
   }
 
-  // Define a function 'purchaseItem' that allows the consumer to mark an item 'Purchased'
+  // Define a function 'deliverToCustomer' that allows the consumer to mark an item 'Delivered'
   function deliverToCustomer(uint _upc) public 
     // Call modifier to check if upc has passed previous supply chain stage
     shippedToCustomer(_upc)
