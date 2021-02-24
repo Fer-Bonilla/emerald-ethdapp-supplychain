@@ -407,10 +407,26 @@ All tests should pass.
 ![Truffle test](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/truffle-test.png)
 
 
-In a separate terminal window, launch the DApp:
+## Running Dapp application
+
+
+In a separate terminal window, launch the DApp, using this commmand:
 
    ```
    npm run start
+   ```
+In teh console you can see:
+
+   ```
+   Compiled successfully!
+
+   You can now view eth-supplychain in the browser. 
+
+     Local:            http://localhost:3000/       
+     On Your Network:  http://10.0.0.144:3000/      
+
+   Note that the development build is not optimized.
+   To create a production build, use npm run build. 
    ```
 
 In the web browser you can go to:
@@ -418,9 +434,62 @@ In the web browser you can go to:
    ```
    http://localhost:3000/
    ```
+   
+The Dapp looks like this:    
+   
 ![Dapp](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/dapp-localhost.png)
 
-You can interact with the Suppluchain contract
+You can interact with the Supplychain contract
+
+
+**1 Emerald overview:**
+
+![Emerald overview](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/emerald-overview.png)
+
+You need to fill the upc code and search for the Fechdata1 and Fetchdata2 info for the emerald.
+
+
+**2 Authorizations - Actor registration**
+
+![Authorization](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/register-actor.png)
+
+Give authorization to a specific address.
+
+
+**3 Miner operations:**
+
+![Authorization](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/miner-dapp.png)
+
+You can use the Miner operations if you have the miner role. You need to follow the sequence describe in the UML diagramas.
+
+
+**4 Laboratory operations:**
+
+![Authorization](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/laboratory-dapp.png)
+
+You can use the Labortory operations if you have the laboratory role. You need to follow the sequence describe in the UML diagramas.
+
+
+**5 Custodian operations:**
+
+![Authorization](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/custodian-dapp.png)
+
+You can use the Custodian operations if you have the custodian role. You need to follow the sequence describe in the UML diagramas.
+
+
+**6 Manufacturer operations:**
+
+![Authorization](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/manufacturer-dapp.png)
+
+You can use the Manufacturer operations if you have the manufacturer role. You need to follow the sequence describe in the UML diagramas.
+
+
+**6 Customer operations:**
+
+![Authorization](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/customer-daap.png)
+
+You can use the Customer operations if you have the customer role. You need to follow the sequence describe in the UML diagramas.
+
 
 
 ## Deploying contracts to kovan test network
@@ -429,7 +498,7 @@ You can interact with the Suppluchain contract
 **The adress for the supplychaon contract on the rinkeby network is:** 0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
 **Link to Etherscan:** https://kovan.etherscan.io/tx/0x7a984f8179eb26fafe67d6620f5412e603189c0d02317599d522fac8c54f0cb8
 
-The console outpuy for the migration looks like:
+The console output for the migration looks like:
 
 ```
    ======================
