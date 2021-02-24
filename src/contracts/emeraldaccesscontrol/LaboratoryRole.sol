@@ -10,10 +10,6 @@ contract LaboratoryRole is AccessControl {
   //using Roles for Roles.Role;
   bytes32 public constant LABORATORY_ROLE = keccak256("LABORATORY_ROLE");
 
-  // Define 2 events, one for Adding, and other for Removing
-  event LaboratoryAdded(address indexed account);
-  event LaboratoryRemoved(address indexed account);
-
   // In the constructor make the address that deploys this contract the 1st retailer
   constructor() {
     _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());

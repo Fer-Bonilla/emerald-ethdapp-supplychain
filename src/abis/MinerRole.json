@@ -308,27 +308,27 @@
     "absolutePath": "/C/GitHub/emerald-ethdapp-supplychain/src/contracts/emeraldaccesscontrol/MinerRole.sol",
     "exportedSymbols": {
       "AccessControl": [
-        1259
+        1251
       ],
       "Address": [
-        1555
+        1547
       ],
       "Context": [
-        1578
+        1570
       ],
       "EnumerableSet": [
-        2070
+        2062
       ],
       "MinerRole": [
-        476
+        468
       ]
     },
-    "id": 477,
+    "id": 469,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 385,
+        "id": 377,
         "literals": [
           "solidity",
           ">=",
@@ -344,10 +344,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/access/AccessControl.sol",
         "file": "@openzeppelin/contracts/access/AccessControl.sol",
-        "id": 386,
+        "id": 378,
         "nodeType": "ImportDirective",
-        "scope": 477,
-        "sourceUnit": 1260,
+        "scope": 469,
+        "sourceUnit": 1252,
         "src": "125:58:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -357,32 +357,32 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 387,
+              "id": 379,
               "name": "AccessControl",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1259,
+              "referencedDeclaration": 1251,
               "src": "343:13:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AccessControl_$1259",
+                "typeIdentifier": "t_contract$_AccessControl_$1251",
                 "typeString": "contract AccessControl"
               }
             },
-            "id": 388,
+            "id": 380,
             "nodeType": "InheritanceSpecifier",
             "src": "343:13:4"
           }
         ],
         "contractDependencies": [
-          1259,
-          1578
+          1251,
+          1570
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 476,
+        "id": 468,
         "linearizedBaseContracts": [
-          476,
-          1259,
-          1578
+          468,
+          1251,
+          1570
         ],
         "name": "MinerRole",
         "nodeType": "ContractDefinition",
@@ -390,11 +390,11 @@
           {
             "constant": true,
             "functionSelector": "6394f6e6",
-            "id": 393,
+            "id": 385,
             "mutability": "constant",
             "name": "MINER_ROLE",
             "nodeType": "VariableDeclaration",
-            "scope": 476,
+            "scope": 468,
             "src": "363:60:4",
             "stateVariable": true,
             "storageLocation": "default",
@@ -403,7 +403,7 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 389,
+              "id": 381,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
               "src": "363:7:4",
@@ -416,7 +416,7 @@
               "arguments": [
                 {
                   "hexValue": "4d494e45525f524f4c45",
-                  "id": 391,
+                  "id": 383,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -438,7 +438,7 @@
                     "typeString": "literal_string \"MINER_ROLE\""
                   }
                 ],
-                "id": 390,
+                "id": 382,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
@@ -449,7 +449,7 @@
                   "typeString": "function (bytes memory) pure returns (bytes32)"
                 }
               },
-              "id": 392,
+              "id": 384,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -468,7 +468,7 @@
           },
           {
             "body": {
-              "id": 407,
+              "id": 399,
               "nodeType": "Block",
               "src": "527:85:4",
               "statements": [
@@ -476,11 +476,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 397,
+                        "id": 389,
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1002,
+                        "referencedDeclaration": 994,
                         "src": "545:18:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -491,18 +491,18 @@
                         "arguments": [],
                         "expression": {
                           "argumentTypes": [],
-                          "id": 398,
+                          "id": 390,
                           "name": "_msgSender",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1566,
+                          "referencedDeclaration": 1558,
                           "src": "565:10:4",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$__$returns$_t_address_payable_$",
                             "typeString": "function () view returns (address payable)"
                           }
                         },
-                        "id": 399,
+                        "id": 391,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -529,18 +529,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 396,
+                      "id": 388,
                       "name": "_setupRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1185,
+                      "referencedDeclaration": 1177,
                       "src": "534:10:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
                         "typeString": "function (bytes32,address)"
                       }
                     },
-                    "id": 400,
+                    "id": 392,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -555,7 +555,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 401,
+                  "id": 393,
                   "nodeType": "ExpressionStatement",
                   "src": "534:44:4"
                 },
@@ -564,7 +564,7 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 403,
+                          "id": 395,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -575,7 +575,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 404,
+                        "id": 396,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -596,18 +596,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 402,
+                      "id": 394,
                       "name": "_addMiner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 464,
+                      "referencedDeclaration": 456,
                       "src": "585:9:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 405,
+                    "id": 397,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -622,31 +622,31 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 406,
+                  "id": 398,
                   "nodeType": "ExpressionStatement",
                   "src": "585:21:4"
                 }
               ]
             },
-            "id": 408,
+            "id": 400,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 394,
+              "id": 386,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "524:2:4"
             },
             "returnParameters": {
-              "id": 395,
+              "id": 387,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "527:0:4"
             },
-            "scope": 476,
+            "scope": 468,
             "src": "513:99:4",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -654,7 +654,7 @@
           },
           {
             "body": {
-              "id": 418,
+              "id": 410,
               "nodeType": "Block",
               "src": "721:49:4",
               "statements": [
@@ -665,7 +665,7 @@
                         "arguments": [
                           {
                             "expression": {
-                              "id": 412,
+                              "id": 404,
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -676,7 +676,7 @@
                                 "typeString": "msg"
                               }
                             },
-                            "id": 413,
+                            "id": 405,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -697,18 +697,18 @@
                               "typeString": "address payable"
                             }
                           ],
-                          "id": 411,
+                          "id": 403,
                           "name": "isMiner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 432,
+                          "referencedDeclaration": 424,
                           "src": "736:7:4",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                             "typeString": "function (address) view returns (bool)"
                           }
                         },
-                        "id": 414,
+                        "id": 406,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -731,7 +731,7 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 410,
+                      "id": 402,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -745,7 +745,7 @@
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 415,
+                    "id": 407,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -760,22 +760,22 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 416,
+                  "id": 408,
                   "nodeType": "ExpressionStatement",
                   "src": "728:28:4"
                 },
                 {
-                  "id": 417,
+                  "id": 409,
                   "nodeType": "PlaceholderStatement",
                   "src": "763:1:4"
                 }
               ]
             },
-            "id": 419,
+            "id": 411,
             "name": "onlyMiner",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 409,
+              "id": 401,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "718:2:4"
@@ -786,7 +786,7 @@
           },
           {
             "body": {
-              "id": 431,
+              "id": 423,
               "nodeType": "Block",
               "src": "890:47:4",
               "statements": [
@@ -794,11 +794,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 427,
+                        "id": 419,
                         "name": "MINER_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 393,
+                        "referencedDeclaration": 385,
                         "src": "912:10:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -806,11 +806,11 @@
                         }
                       },
                       {
-                        "id": 428,
+                        "id": 420,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 421,
+                        "referencedDeclaration": 413,
                         "src": "923:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -829,18 +829,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 426,
+                      "id": 418,
                       "name": "hasRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1048,
+                      "referencedDeclaration": 1040,
                       "src": "904:7:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
                         "typeString": "function (bytes32,address) view returns (bool)"
                       }
                     },
-                    "id": 429,
+                    "id": 421,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -855,31 +855,31 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 425,
-                  "id": 430,
+                  "functionReturnParameters": 417,
+                  "id": 422,
                   "nodeType": "Return",
                   "src": "897:34:4"
                 }
               ]
             },
             "functionSelector": "701b70ac",
-            "id": 432,
+            "id": 424,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "isMiner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 422,
+              "id": 414,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 421,
+                  "id": 413,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 432,
+                  "scope": 424,
                   "src": "846:15:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -888,7 +888,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 420,
+                    "id": 412,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "846:7:4",
@@ -904,16 +904,16 @@
               "src": "845:17:4"
             },
             "returnParameters": {
-              "id": 425,
+              "id": 417,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 424,
+                  "id": 416,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 432,
+                  "scope": 424,
                   "src": "884:4:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -922,7 +922,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 423,
+                    "id": 415,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "884:4:4",
@@ -936,7 +936,7 @@
               ],
               "src": "883:6:4"
             },
-            "scope": 476,
+            "scope": 468,
             "src": "829:108:4",
             "stateMutability": "view",
             "virtual": false,
@@ -944,7 +944,7 @@
           },
           {
             "body": {
-              "id": 443,
+              "id": 435,
               "nodeType": "Block",
               "src": "1050:31:4",
               "statements": [
@@ -952,11 +952,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 440,
+                        "id": 432,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 434,
+                        "referencedDeclaration": 426,
                         "src": "1067:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -971,18 +971,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 439,
+                      "id": 431,
                       "name": "_addMiner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 464,
+                      "referencedDeclaration": 456,
                       "src": "1057:9:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 441,
+                    "id": 433,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -997,25 +997,25 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 442,
+                  "id": 434,
                   "nodeType": "ExpressionStatement",
                   "src": "1057:18:4"
                 }
               ]
             },
             "functionSelector": "f3982e5e",
-            "id": 444,
+            "id": 436,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 437,
+                "id": 429,
                 "modifierName": {
-                  "id": 436,
+                  "id": 428,
                   "name": "onlyMiner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 419,
+                  "referencedDeclaration": 411,
                   "src": "1040:9:4",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1029,16 +1029,16 @@
             "name": "addMiner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 435,
+              "id": 427,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 434,
+                  "id": 426,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 444,
+                  "scope": 436,
                   "src": "1016:15:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1047,7 +1047,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 433,
+                    "id": 425,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1016:7:4",
@@ -1063,12 +1063,12 @@
               "src": "1015:17:4"
             },
             "returnParameters": {
-              "id": 438,
+              "id": 430,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1050:0:4"
             },
-            "scope": 476,
+            "scope": 468,
             "src": "998:83:4",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1076,7 +1076,7 @@
           },
           {
             "body": {
-              "id": 452,
+              "id": 444,
               "nodeType": "Block",
               "src": "1181:37:4",
               "statements": [
@@ -1085,7 +1085,7 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 448,
+                          "id": 440,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -1096,7 +1096,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 449,
+                        "id": 441,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1117,18 +1117,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 447,
+                      "id": 439,
                       "name": "_removeMiner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 475,
+                      "referencedDeclaration": 467,
                       "src": "1188:12:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 450,
+                    "id": 442,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1143,32 +1143,32 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 451,
+                  "id": 443,
                   "nodeType": "ExpressionStatement",
                   "src": "1188:24:4"
                 }
               ]
             },
             "functionSelector": "ae46352a",
-            "id": 453,
+            "id": 445,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "renounceMiner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 445,
+              "id": 437,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1171:2:4"
             },
             "returnParameters": {
-              "id": 446,
+              "id": 438,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1181:0:4"
             },
-            "scope": 476,
+            "scope": 468,
             "src": "1149:69:4",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1176,7 +1176,7 @@
           },
           {
             "body": {
-              "id": 463,
+              "id": 455,
               "nodeType": "Block",
               "src": "1355:43:4",
               "statements": [
@@ -1184,11 +1184,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 459,
+                        "id": 451,
                         "name": "MINER_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 393,
+                        "referencedDeclaration": 385,
                         "src": "1372:10:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -1196,11 +1196,11 @@
                         }
                       },
                       {
-                        "id": 460,
+                        "id": 452,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 455,
+                        "referencedDeclaration": 447,
                         "src": "1384:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1219,18 +1219,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 458,
+                      "id": 450,
                       "name": "grantRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1123,
+                      "referencedDeclaration": 1115,
                       "src": "1362:9:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
                         "typeString": "function (bytes32,address)"
                       }
                     },
-                    "id": 461,
+                    "id": 453,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1245,29 +1245,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 462,
+                  "id": 454,
                   "nodeType": "ExpressionStatement",
                   "src": "1362:30:4"
                 }
               ]
             },
-            "id": 464,
+            "id": 456,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_addMiner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 456,
+              "id": 448,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 455,
+                  "id": 447,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 464,
+                  "scope": 456,
                   "src": "1329:15:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1276,7 +1276,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 454,
+                    "id": 446,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1329:7:4",
@@ -1292,12 +1292,12 @@
               "src": "1328:17:4"
             },
             "returnParameters": {
-              "id": 457,
+              "id": 449,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1355:0:4"
             },
-            "scope": 476,
+            "scope": 468,
             "src": "1310:88:4",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1305,7 +1305,7 @@
           },
           {
             "body": {
-              "id": 474,
+              "id": 466,
               "nodeType": "Block",
               "src": "1547:44:4",
               "statements": [
@@ -1313,11 +1313,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 470,
+                        "id": 462,
                         "name": "MINER_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 393,
+                        "referencedDeclaration": 385,
                         "src": "1565:10:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -1325,11 +1325,11 @@
                         }
                       },
                       {
-                        "id": 471,
+                        "id": 463,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 466,
+                        "referencedDeclaration": 458,
                         "src": "1577:7:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1348,18 +1348,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 469,
+                      "id": 461,
                       "name": "revokeRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1149,
+                      "referencedDeclaration": 1141,
                       "src": "1554:10:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
                         "typeString": "function (bytes32,address)"
                       }
                     },
-                    "id": 472,
+                    "id": 464,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1374,29 +1374,29 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 473,
+                  "id": 465,
                   "nodeType": "ExpressionStatement",
                   "src": "1554:31:4"
                 }
               ]
             },
-            "id": 475,
+            "id": 467,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_removeMiner",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 467,
+              "id": 459,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 466,
+                  "id": 458,
                   "mutability": "mutable",
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 475,
+                  "scope": 467,
                   "src": "1521:15:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1405,7 +1405,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 465,
+                    "id": 457,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1521:7:4",
@@ -1421,19 +1421,19 @@
               "src": "1520:17:4"
             },
             "returnParameters": {
-              "id": 468,
+              "id": 460,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1547:0:4"
             },
-            "scope": 476,
+            "scope": 468,
             "src": "1499:92:4",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           }
         ],
-        "scope": 477,
+        "scope": 469,
         "src": "321:1273:4"
       }
     ],
@@ -1444,19 +1444,19 @@
       "absolutePath": "/C/GitHub/emerald-ethdapp-supplychain/src/contracts/emeraldaccesscontrol/MinerRole.sol",
       "exportedSymbols": {
         "AccessControl": [
-          1259
+          1251
         ],
         "Address": [
-          1555
+          1547
         ],
         "Context": [
-          1578
+          1570
         ],
         "EnumerableSet": [
-          2070
+          2062
         ],
         "MinerRole": [
-          476
+          468
         ]
       },
       "license": "MIT"
@@ -1474,22 +1474,22 @@
             ".0"
           ]
         },
-        "id": 385,
+        "id": 377,
         "name": "PragmaDirective",
         "src": "33:31:4"
       },
       {
         "attributes": {
-          "SourceUnit": 1260,
+          "SourceUnit": 1252,
           "absolutePath": "@openzeppelin/contracts/access/AccessControl.sol",
           "file": "@openzeppelin/contracts/access/AccessControl.sol",
-          "scope": 477,
+          "scope": 469,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 386,
+        "id": 378,
         "name": "ImportDirective",
         "src": "125:58:4"
       },
@@ -1497,18 +1497,18 @@
         "attributes": {
           "abstract": false,
           "contractDependencies": [
-            1259,
-            1578
+            1251,
+            1570
           ],
           "contractKind": "contract",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            476,
-            1259,
-            1578
+            468,
+            1251,
+            1570
           ],
           "name": "MinerRole",
-          "scope": 477
+          "scope": 469
         },
         "children": [
           {
@@ -1517,15 +1517,15 @@
               {
                 "attributes": {
                   "name": "AccessControl",
-                  "referencedDeclaration": 1259,
+                  "referencedDeclaration": 1251,
                   "type": "contract AccessControl"
                 },
-                "id": 387,
+                "id": 379,
                 "name": "UserDefinedTypeName",
                 "src": "343:13:4"
               }
             ],
-            "id": 388,
+            "id": 380,
             "name": "InheritanceSpecifier",
             "src": "343:13:4"
           },
@@ -1535,7 +1535,7 @@
               "functionSelector": "6394f6e6",
               "mutability": "constant",
               "name": "MINER_ROLE",
-              "scope": 476,
+              "scope": 468,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bytes32",
@@ -1547,7 +1547,7 @@
                   "name": "bytes32",
                   "type": "bytes32"
                 },
-                "id": 389,
+                "id": 381,
                 "name": "ElementaryTypeName",
                 "src": "363:7:4"
               },
@@ -1581,7 +1581,7 @@
                       "type": "function (bytes memory) pure returns (bytes32)",
                       "value": "keccak256"
                     },
-                    "id": 390,
+                    "id": 382,
                     "name": "Identifier",
                     "src": "400:9:4"
                   },
@@ -1596,17 +1596,17 @@
                       "type": "literal_string \"MINER_ROLE\"",
                       "value": "MINER_ROLE"
                     },
-                    "id": 391,
+                    "id": 383,
                     "name": "Literal",
                     "src": "410:12:4"
                   }
                 ],
-                "id": 392,
+                "id": 384,
                 "name": "FunctionCall",
                 "src": "400:23:4"
               }
             ],
-            "id": 393,
+            "id": 385,
             "name": "VariableDeclaration",
             "src": "363:60:4"
           },
@@ -1619,7 +1619,7 @@
                 null
               ],
               "name": "",
-              "scope": 476,
+              "scope": 468,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -1632,7 +1632,7 @@
                   ]
                 },
                 "children": [],
-                "id": 394,
+                "id": 386,
                 "name": "ParameterList",
                 "src": "524:2:4"
               },
@@ -1643,7 +1643,7 @@
                   ]
                 },
                 "children": [],
-                "id": 395,
+                "id": 387,
                 "name": "ParameterList",
                 "src": "527:0:4"
               },
@@ -1681,11 +1681,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1185,
+                              "referencedDeclaration": 1177,
                               "type": "function (bytes32,address)",
                               "value": "_setupRole"
                             },
-                            "id": 396,
+                            "id": 388,
                             "name": "Identifier",
                             "src": "534:10:4"
                           },
@@ -1694,11 +1694,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1002,
+                              "referencedDeclaration": 994,
                               "type": "bytes32",
                               "value": "DEFAULT_ADMIN_ROLE"
                             },
-                            "id": 397,
+                            "id": 389,
                             "name": "Identifier",
                             "src": "545:18:4"
                           },
@@ -1728,26 +1728,26 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1566,
+                                  "referencedDeclaration": 1558,
                                   "type": "function () view returns (address payable)",
                                   "value": "_msgSender"
                                 },
-                                "id": 398,
+                                "id": 390,
                                 "name": "Identifier",
                                 "src": "565:10:4"
                               }
                             ],
-                            "id": 399,
+                            "id": 391,
                             "name": "FunctionCall",
                             "src": "565:12:4"
                           }
                         ],
-                        "id": 400,
+                        "id": 392,
                         "name": "FunctionCall",
                         "src": "534:44:4"
                       }
                     ],
-                    "id": 401,
+                    "id": 393,
                     "name": "ExpressionStatement",
                     "src": "534:44:4"
                   },
@@ -1779,11 +1779,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 464,
+                              "referencedDeclaration": 456,
                               "type": "function (address)",
                               "value": "_addMiner"
                             },
-                            "id": 402,
+                            "id": 394,
                             "name": "Identifier",
                             "src": "585:9:4"
                           },
@@ -1806,32 +1806,32 @@
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 403,
+                                "id": 395,
                                 "name": "Identifier",
                                 "src": "595:3:4"
                               }
                             ],
-                            "id": 404,
+                            "id": 396,
                             "name": "MemberAccess",
                             "src": "595:10:4"
                           }
                         ],
-                        "id": 405,
+                        "id": 397,
                         "name": "FunctionCall",
                         "src": "585:21:4"
                       }
                     ],
-                    "id": 406,
+                    "id": 398,
                     "name": "ExpressionStatement",
                     "src": "585:21:4"
                   }
                 ],
-                "id": 407,
+                "id": 399,
                 "name": "Block",
                 "src": "527:85:4"
               }
             ],
-            "id": 408,
+            "id": 400,
             "name": "FunctionDefinition",
             "src": "513:99:4"
           },
@@ -1849,7 +1849,7 @@
                   ]
                 },
                 "children": [],
-                "id": 409,
+                "id": 401,
                 "name": "ParameterList",
                 "src": "718:2:4"
               },
@@ -1888,7 +1888,7 @@
                               "type": "function (bool) pure",
                               "value": "require"
                             },
-                            "id": 410,
+                            "id": 402,
                             "name": "Identifier",
                             "src": "728:7:4"
                           },
@@ -1918,11 +1918,11 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 432,
+                                  "referencedDeclaration": 424,
                                   "type": "function (address) view returns (bool)",
                                   "value": "isMiner"
                                 },
-                                "id": 411,
+                                "id": 403,
                                 "name": "Identifier",
                                 "src": "736:7:4"
                               },
@@ -1945,42 +1945,42 @@
                                       "type": "msg",
                                       "value": "msg"
                                     },
-                                    "id": 412,
+                                    "id": 404,
                                     "name": "Identifier",
                                     "src": "744:3:4"
                                   }
                                 ],
-                                "id": 413,
+                                "id": 405,
                                 "name": "MemberAccess",
                                 "src": "744:10:4"
                               }
                             ],
-                            "id": 414,
+                            "id": 406,
                             "name": "FunctionCall",
                             "src": "736:19:4"
                           }
                         ],
-                        "id": 415,
+                        "id": 407,
                         "name": "FunctionCall",
                         "src": "728:28:4"
                       }
                     ],
-                    "id": 416,
+                    "id": 408,
                     "name": "ExpressionStatement",
                     "src": "728:28:4"
                   },
                   {
-                    "id": 417,
+                    "id": 409,
                     "name": "PlaceholderStatement",
                     "src": "763:1:4"
                   }
                 ],
-                "id": 418,
+                "id": 410,
                 "name": "Block",
                 "src": "721:49:4"
               }
             ],
-            "id": 419,
+            "id": 411,
             "name": "ModifierDefinition",
             "src": "700:70:4"
           },
@@ -1994,7 +1994,7 @@
                 null
               ],
               "name": "isMiner",
-              "scope": 476,
+              "scope": 468,
               "stateMutability": "view",
               "virtual": false,
               "visibility": "public"
@@ -2007,7 +2007,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "account",
-                      "scope": 432,
+                      "scope": 424,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -2020,17 +2020,17 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 420,
+                        "id": 412,
                         "name": "ElementaryTypeName",
                         "src": "846:7:4"
                       }
                     ],
-                    "id": 421,
+                    "id": 413,
                     "name": "VariableDeclaration",
                     "src": "846:15:4"
                   }
                 ],
-                "id": 422,
+                "id": 414,
                 "name": "ParameterList",
                 "src": "845:17:4"
               },
@@ -2041,7 +2041,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "",
-                      "scope": 432,
+                      "scope": 424,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bool",
@@ -2053,17 +2053,17 @@
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 423,
+                        "id": 415,
                         "name": "ElementaryTypeName",
                         "src": "884:4:4"
                       }
                     ],
-                    "id": 424,
+                    "id": 416,
                     "name": "VariableDeclaration",
                     "src": "884:4:4"
                   }
                 ],
-                "id": 425,
+                "id": 417,
                 "name": "ParameterList",
                 "src": "883:6:4"
               },
@@ -2071,7 +2071,7 @@
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 425
+                      "functionReturnParameters": 417
                     },
                     "children": [
                       {
@@ -2104,11 +2104,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1048,
+                              "referencedDeclaration": 1040,
                               "type": "function (bytes32,address) view returns (bool)",
                               "value": "hasRole"
                             },
-                            "id": 426,
+                            "id": 418,
                             "name": "Identifier",
                             "src": "904:7:4"
                           },
@@ -2117,11 +2117,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 393,
+                              "referencedDeclaration": 385,
                               "type": "bytes32",
                               "value": "MINER_ROLE"
                             },
-                            "id": 427,
+                            "id": 419,
                             "name": "Identifier",
                             "src": "912:10:4"
                           },
@@ -2130,31 +2130,31 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 421,
+                              "referencedDeclaration": 413,
                               "type": "address",
                               "value": "account"
                             },
-                            "id": 428,
+                            "id": 420,
                             "name": "Identifier",
                             "src": "923:7:4"
                           }
                         ],
-                        "id": 429,
+                        "id": 421,
                         "name": "FunctionCall",
                         "src": "904:27:4"
                       }
                     ],
-                    "id": 430,
+                    "id": 422,
                     "name": "Return",
                     "src": "897:34:4"
                   }
                 ],
-                "id": 431,
+                "id": 423,
                 "name": "Block",
                 "src": "890:47:4"
               }
             ],
-            "id": 432,
+            "id": 424,
             "name": "FunctionDefinition",
             "src": "829:108:4"
           },
@@ -2165,7 +2165,7 @@
               "isConstructor": false,
               "kind": "function",
               "name": "addMiner",
-              "scope": 476,
+              "scope": 468,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -2178,7 +2178,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "account",
-                      "scope": 444,
+                      "scope": 436,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -2191,17 +2191,17 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 433,
+                        "id": 425,
                         "name": "ElementaryTypeName",
                         "src": "1016:7:4"
                       }
                     ],
-                    "id": 434,
+                    "id": 426,
                     "name": "VariableDeclaration",
                     "src": "1016:15:4"
                   }
                 ],
-                "id": 435,
+                "id": 427,
                 "name": "ParameterList",
                 "src": "1015:17:4"
               },
@@ -2212,7 +2212,7 @@
                   ]
                 },
                 "children": [],
-                "id": 438,
+                "id": 430,
                 "name": "ParameterList",
                 "src": "1050:0:4"
               },
@@ -2224,16 +2224,16 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 419,
+                      "referencedDeclaration": 411,
                       "type": "modifier ()",
                       "value": "onlyMiner"
                     },
-                    "id": 436,
+                    "id": 428,
                     "name": "Identifier",
                     "src": "1040:9:4"
                   }
                 ],
-                "id": 437,
+                "id": 429,
                 "name": "ModifierInvocation",
                 "src": "1040:9:4"
               },
@@ -2267,11 +2267,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 464,
+                              "referencedDeclaration": 456,
                               "type": "function (address)",
                               "value": "_addMiner"
                             },
-                            "id": 439,
+                            "id": 431,
                             "name": "Identifier",
                             "src": "1057:9:4"
                           },
@@ -2280,31 +2280,31 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 434,
+                              "referencedDeclaration": 426,
                               "type": "address",
                               "value": "account"
                             },
-                            "id": 440,
+                            "id": 432,
                             "name": "Identifier",
                             "src": "1067:7:4"
                           }
                         ],
-                        "id": 441,
+                        "id": 433,
                         "name": "FunctionCall",
                         "src": "1057:18:4"
                       }
                     ],
-                    "id": 442,
+                    "id": 434,
                     "name": "ExpressionStatement",
                     "src": "1057:18:4"
                   }
                 ],
-                "id": 443,
+                "id": 435,
                 "name": "Block",
                 "src": "1050:31:4"
               }
             ],
-            "id": 444,
+            "id": 436,
             "name": "FunctionDefinition",
             "src": "998:83:4"
           },
@@ -2318,7 +2318,7 @@
                 null
               ],
               "name": "renounceMiner",
-              "scope": 476,
+              "scope": 468,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -2331,7 +2331,7 @@
                   ]
                 },
                 "children": [],
-                "id": 445,
+                "id": 437,
                 "name": "ParameterList",
                 "src": "1171:2:4"
               },
@@ -2342,7 +2342,7 @@
                   ]
                 },
                 "children": [],
-                "id": 446,
+                "id": 438,
                 "name": "ParameterList",
                 "src": "1181:0:4"
               },
@@ -2376,11 +2376,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 475,
+                              "referencedDeclaration": 467,
                               "type": "function (address)",
                               "value": "_removeMiner"
                             },
-                            "id": 447,
+                            "id": 439,
                             "name": "Identifier",
                             "src": "1188:12:4"
                           },
@@ -2403,32 +2403,32 @@
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 448,
+                                "id": 440,
                                 "name": "Identifier",
                                 "src": "1201:3:4"
                               }
                             ],
-                            "id": 449,
+                            "id": 441,
                             "name": "MemberAccess",
                             "src": "1201:10:4"
                           }
                         ],
-                        "id": 450,
+                        "id": 442,
                         "name": "FunctionCall",
                         "src": "1188:24:4"
                       }
                     ],
-                    "id": 451,
+                    "id": 443,
                     "name": "ExpressionStatement",
                     "src": "1188:24:4"
                   }
                 ],
-                "id": 452,
+                "id": 444,
                 "name": "Block",
                 "src": "1181:37:4"
               }
             ],
-            "id": 453,
+            "id": 445,
             "name": "FunctionDefinition",
             "src": "1149:69:4"
           },
@@ -2441,7 +2441,7 @@
                 null
               ],
               "name": "_addMiner",
-              "scope": 476,
+              "scope": 468,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "internal"
@@ -2454,7 +2454,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "account",
-                      "scope": 464,
+                      "scope": 456,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -2467,17 +2467,17 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 454,
+                        "id": 446,
                         "name": "ElementaryTypeName",
                         "src": "1329:7:4"
                       }
                     ],
-                    "id": 455,
+                    "id": 447,
                     "name": "VariableDeclaration",
                     "src": "1329:15:4"
                   }
                 ],
-                "id": 456,
+                "id": 448,
                 "name": "ParameterList",
                 "src": "1328:17:4"
               },
@@ -2488,7 +2488,7 @@
                   ]
                 },
                 "children": [],
-                "id": 457,
+                "id": 449,
                 "name": "ParameterList",
                 "src": "1355:0:4"
               },
@@ -2526,11 +2526,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1123,
+                              "referencedDeclaration": 1115,
                               "type": "function (bytes32,address)",
                               "value": "grantRole"
                             },
-                            "id": 458,
+                            "id": 450,
                             "name": "Identifier",
                             "src": "1362:9:4"
                           },
@@ -2539,11 +2539,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 393,
+                              "referencedDeclaration": 385,
                               "type": "bytes32",
                               "value": "MINER_ROLE"
                             },
-                            "id": 459,
+                            "id": 451,
                             "name": "Identifier",
                             "src": "1372:10:4"
                           },
@@ -2552,31 +2552,31 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 455,
+                              "referencedDeclaration": 447,
                               "type": "address",
                               "value": "account"
                             },
-                            "id": 460,
+                            "id": 452,
                             "name": "Identifier",
                             "src": "1384:7:4"
                           }
                         ],
-                        "id": 461,
+                        "id": 453,
                         "name": "FunctionCall",
                         "src": "1362:30:4"
                       }
                     ],
-                    "id": 462,
+                    "id": 454,
                     "name": "ExpressionStatement",
                     "src": "1362:30:4"
                   }
                 ],
-                "id": 463,
+                "id": 455,
                 "name": "Block",
                 "src": "1355:43:4"
               }
             ],
-            "id": 464,
+            "id": 456,
             "name": "FunctionDefinition",
             "src": "1310:88:4"
           },
@@ -2589,7 +2589,7 @@
                 null
               ],
               "name": "_removeMiner",
-              "scope": 476,
+              "scope": 468,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "internal"
@@ -2602,7 +2602,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "account",
-                      "scope": 475,
+                      "scope": 467,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -2615,17 +2615,17 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 465,
+                        "id": 457,
                         "name": "ElementaryTypeName",
                         "src": "1521:7:4"
                       }
                     ],
-                    "id": 466,
+                    "id": 458,
                     "name": "VariableDeclaration",
                     "src": "1521:15:4"
                   }
                 ],
-                "id": 467,
+                "id": 459,
                 "name": "ParameterList",
                 "src": "1520:17:4"
               },
@@ -2636,7 +2636,7 @@
                   ]
                 },
                 "children": [],
-                "id": 468,
+                "id": 460,
                 "name": "ParameterList",
                 "src": "1547:0:4"
               },
@@ -2674,11 +2674,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1149,
+                              "referencedDeclaration": 1141,
                               "type": "function (bytes32,address)",
                               "value": "revokeRole"
                             },
-                            "id": 469,
+                            "id": 461,
                             "name": "Identifier",
                             "src": "1554:10:4"
                           },
@@ -2687,11 +2687,11 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 393,
+                              "referencedDeclaration": 385,
                               "type": "bytes32",
                               "value": "MINER_ROLE"
                             },
-                            "id": 470,
+                            "id": 462,
                             "name": "Identifier",
                             "src": "1565:10:4"
                           },
@@ -2700,41 +2700,41 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 466,
+                              "referencedDeclaration": 458,
                               "type": "address",
                               "value": "account"
                             },
-                            "id": 471,
+                            "id": 463,
                             "name": "Identifier",
                             "src": "1577:7:4"
                           }
                         ],
-                        "id": 472,
+                        "id": 464,
                         "name": "FunctionCall",
                         "src": "1554:31:4"
                       }
                     ],
-                    "id": 473,
+                    "id": 465,
                     "name": "ExpressionStatement",
                     "src": "1554:31:4"
                   }
                 ],
-                "id": 474,
+                "id": 466,
                 "name": "Block",
                 "src": "1547:44:4"
               }
             ],
-            "id": 475,
+            "id": 467,
             "name": "FunctionDefinition",
             "src": "1499:92:4"
           }
         ],
-        "id": 476,
+        "id": 468,
         "name": "ContractDefinition",
         "src": "321:1273:4"
       }
     ],
-    "id": 477,
+    "id": 469,
     "name": "SourceUnit",
     "src": "33:1561:4"
   },
@@ -2743,335 +2743,7 @@
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {
-    "42": {
-      "events": {
-        "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "previousAdminRole",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "newAdminRole",
-              "type": "bytes32"
-            }
-          ],
-          "name": "RoleAdminChanged",
-          "type": "event"
-        },
-        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleGranted",
-          "type": "event"
-        },
-        "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleRevoked",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0x6708966d8E6B4B312eb40C8B6EFc29595D7eAE22",
-      "transactionHash": "0x39373d7446b83e0adcdd20c917585f516b6e8dadaac8653b90166c92878456a8"
-    },
-    "1613865707792": {
-      "events": {
-        "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "previousAdminRole",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "newAdminRole",
-              "type": "bytes32"
-            }
-          ],
-          "name": "RoleAdminChanged",
-          "type": "event"
-        },
-        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleGranted",
-          "type": "event"
-        },
-        "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleRevoked",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0x04BEbb47E1bf81eF0B40bc781C625fb3d6acfaE6",
-      "transactionHash": "0x2b054934c7a2f064fec64288993f74cc8b110c7fc2018a321f1857fe188fa1f5"
-    },
-    "1613870315058": {
-      "events": {
-        "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "previousAdminRole",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "newAdminRole",
-              "type": "bytes32"
-            }
-          ],
-          "name": "RoleAdminChanged",
-          "type": "event"
-        },
-        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleGranted",
-          "type": "event"
-        },
-        "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleRevoked",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0x23E2b13b08a22E9eEe431F862eC7A17aB1E99B98",
-      "transactionHash": "0x30a449fba51ebae5380903911eec374c2627165b54da048de53b75326c3066de"
-    },
-    "1613965109893": {
-      "events": {
-        "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "previousAdminRole",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "newAdminRole",
-              "type": "bytes32"
-            }
-          ],
-          "name": "RoleAdminChanged",
-          "type": "event"
-        },
-        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleGranted",
-          "type": "event"
-        },
-        "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleRevoked",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0x23E2b13b08a22E9eEe431F862eC7A17aB1E99B98",
-      "transactionHash": "0x30a449fba51ebae5380903911eec374c2627165b54da048de53b75326c3066de"
-    },
-    "1614104924702": {
+    "1614124968336": {
       "events": {
         "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
           "anonymous": false,
@@ -3155,7 +2827,7 @@
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-02-23T19:50:37.911Z",
+  "updatedAt": "2021-02-24T00:03:37.590Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

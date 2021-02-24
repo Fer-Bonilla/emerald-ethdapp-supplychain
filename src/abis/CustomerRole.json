@@ -308,19 +308,19 @@
     "absolutePath": "/C/GitHub/emerald-ethdapp-supplychain/src/contracts/emeraldaccesscontrol/CustomerRole.sol",
     "exportedSymbols": {
       "AccessControl": [
-        1259
+        1251
       ],
       "Address": [
-        1555
+        1547
       ],
       "Context": [
-        1578
+        1570
       ],
       "CustomerRole": [
         187
       ],
       "EnumerableSet": [
-        2070
+        2062
       ]
     },
     "id": 188,
@@ -347,7 +347,7 @@
         "id": 96,
         "nodeType": "ImportDirective",
         "scope": 188,
-        "sourceUnit": 1260,
+        "sourceUnit": 1252,
         "src": "125:58:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -360,10 +360,10 @@
               "id": 97,
               "name": "AccessControl",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1259,
+              "referencedDeclaration": 1251,
               "src": "290:13:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AccessControl_$1259",
+                "typeIdentifier": "t_contract$_AccessControl_$1251",
                 "typeString": "contract AccessControl"
               }
             },
@@ -373,16 +373,16 @@
           }
         ],
         "contractDependencies": [
-          1259,
-          1578
+          1251,
+          1570
         ],
         "contractKind": "contract",
         "fullyImplemented": true,
         "id": 187,
         "linearizedBaseContracts": [
           187,
-          1259,
-          1578
+          1251,
+          1570
         ],
         "name": "CustomerRole",
         "nodeType": "ContractDefinition",
@@ -480,7 +480,7 @@
                         "name": "DEFAULT_ADMIN_ROLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1002,
+                        "referencedDeclaration": 994,
                         "src": "537:18:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -495,7 +495,7 @@
                           "name": "_msgSender",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1566,
+                          "referencedDeclaration": 1558,
                           "src": "557:10:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$__$returns$_t_address_payable_$",
@@ -533,7 +533,7 @@
                       "name": "_setupRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1185,
+                      "referencedDeclaration": 1177,
                       "src": "526:10:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -853,7 +853,7 @@
                       "name": "hasRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1048,
+                      "referencedDeclaration": 1040,
                       "src": "940:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_bytes32_$_t_address_$returns$_t_bool_$",
@@ -1243,7 +1243,7 @@
                       "name": "grantRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1123,
+                      "referencedDeclaration": 1115,
                       "src": "1469:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -1372,7 +1372,7 @@
                       "name": "revokeRole",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1149,
+                      "referencedDeclaration": 1141,
                       "src": "1674:10:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_address_$returns$__$",
@@ -1464,19 +1464,19 @@
       "absolutePath": "/C/GitHub/emerald-ethdapp-supplychain/src/contracts/emeraldaccesscontrol/CustomerRole.sol",
       "exportedSymbols": {
         "AccessControl": [
-          1259
+          1251
         ],
         "Address": [
-          1555
+          1547
         ],
         "Context": [
-          1578
+          1570
         ],
         "CustomerRole": [
           187
         ],
         "EnumerableSet": [
-          2070
+          2062
         ]
       },
       "license": "MIT"
@@ -1500,7 +1500,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 1260,
+          "SourceUnit": 1252,
           "absolutePath": "@openzeppelin/contracts/access/AccessControl.sol",
           "file": "@openzeppelin/contracts/access/AccessControl.sol",
           "scope": 188,
@@ -1517,15 +1517,15 @@
         "attributes": {
           "abstract": false,
           "contractDependencies": [
-            1259,
-            1578
+            1251,
+            1570
           ],
           "contractKind": "contract",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             187,
-            1259,
-            1578
+            1251,
+            1570
           ],
           "name": "CustomerRole",
           "scope": 188
@@ -1537,7 +1537,7 @@
               {
                 "attributes": {
                   "name": "AccessControl",
-                  "referencedDeclaration": 1259,
+                  "referencedDeclaration": 1251,
                   "type": "contract AccessControl"
                 },
                 "id": 97,
@@ -1701,7 +1701,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1185,
+                              "referencedDeclaration": 1177,
                               "type": "function (bytes32,address)",
                               "value": "_setupRole"
                             },
@@ -1714,7 +1714,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1002,
+                              "referencedDeclaration": 994,
                               "type": "bytes32",
                               "value": "DEFAULT_ADMIN_ROLE"
                             },
@@ -1748,7 +1748,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1566,
+                                  "referencedDeclaration": 1558,
                                   "type": "function () view returns (address payable)",
                                   "value": "_msgSender"
                                 },
@@ -2143,7 +2143,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1048,
+                              "referencedDeclaration": 1040,
                               "type": "function (bytes32,address) view returns (bool)",
                               "value": "hasRole"
                             },
@@ -2565,7 +2565,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1123,
+                              "referencedDeclaration": 1115,
                               "type": "function (bytes32,address)",
                               "value": "grantRole"
                             },
@@ -2713,7 +2713,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1149,
+                              "referencedDeclaration": 1141,
                               "type": "function (bytes32,address)",
                               "value": "revokeRole"
                             },
@@ -2782,335 +2782,7 @@
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {
-    "42": {
-      "events": {
-        "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "previousAdminRole",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "newAdminRole",
-              "type": "bytes32"
-            }
-          ],
-          "name": "RoleAdminChanged",
-          "type": "event"
-        },
-        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleGranted",
-          "type": "event"
-        },
-        "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleRevoked",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0x9e52D8Eafc46fB48FeDa1566995204759e62bE4E",
-      "transactionHash": "0xc6c7aa847ddd203625a745cdef5f9c5b004adeff11ada1a8e18faa331791ac2c"
-    },
-    "1613865707792": {
-      "events": {
-        "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "previousAdminRole",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "newAdminRole",
-              "type": "bytes32"
-            }
-          ],
-          "name": "RoleAdminChanged",
-          "type": "event"
-        },
-        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleGranted",
-          "type": "event"
-        },
-        "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleRevoked",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0x2B06a855144963710c4B6c375AD5A2e35B3983d9",
-      "transactionHash": "0x7289a5d678051dc3a96fff3fbf6fe3f68690893391b618de2dcb82b3de55c775"
-    },
-    "1613870315058": {
-      "events": {
-        "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "previousAdminRole",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "newAdminRole",
-              "type": "bytes32"
-            }
-          ],
-          "name": "RoleAdminChanged",
-          "type": "event"
-        },
-        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleGranted",
-          "type": "event"
-        },
-        "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleRevoked",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0xf2ee0b0Cdcae5013930B92c0Ba54F7F7f1933613",
-      "transactionHash": "0x4be03055f63944e2f41f97a9a7e8a91b52d1be0bbd05b946044aeaa1dba269f2"
-    },
-    "1613965109893": {
-      "events": {
-        "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "previousAdminRole",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "newAdminRole",
-              "type": "bytes32"
-            }
-          ],
-          "name": "RoleAdminChanged",
-          "type": "event"
-        },
-        "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleGranted",
-          "type": "event"
-        },
-        "0xf6391f5c32d9c69d2a47ea670b442974b53935d1edc7fd64eb21e047a839171b": {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "bytes32",
-              "name": "role",
-              "type": "bytes32"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "account",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "sender",
-              "type": "address"
-            }
-          ],
-          "name": "RoleRevoked",
-          "type": "event"
-        }
-      },
-      "links": {},
-      "address": "0xf2ee0b0Cdcae5013930B92c0Ba54F7F7f1933613",
-      "transactionHash": "0x4be03055f63944e2f41f97a9a7e8a91b52d1be0bbd05b946044aeaa1dba269f2"
-    },
-    "1614104924702": {
+    "1614124968336": {
       "events": {
         "0xbd79b86ffe0ab8e8776151514217cd7cacd52c909f66475c3af44e129f0b00ff": {
           "anonymous": false,
@@ -3194,7 +2866,7 @@
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-02-23T19:50:37.903Z",
+  "updatedAt": "2021-02-24T00:03:37.582Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
