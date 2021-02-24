@@ -24,17 +24,17 @@ In this project, We explore an Ethereum Dapp development for a decentralized eme
 
 Colombia is the biggest emeralds producer worldwide; close to 60% of all emeralds production comes from there. Colombian emeralds are recognized for their quality and beautiful tones. The extraction process still handcrafts in many areas and has an extensive traders and intermediaries network. The next diagrams show a general view of actors, and steps involved in the emeralds production and trading:
 
-![Emeralds supply chain process](https://github.com/Fer-Bonilla/emeralds-supplychain-dapp/blob/main/images/emeraldssuppychain.png)
+![Emeralds supply chain process](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/emeraldssuppychain.png)
 
 The challenge is to apply blockchain to create a Decentralized App that helps trade emeralds in a trustworthy market supported by  Smart Contracts on the Ethereum platform. We start by simplifying the supply chain problem and breaking the trading cycle into two parts. The first one starts with the extraction and ends with the trading process of cut emeralds, and the second one starts with the cut emeralds and finishes when jewels with emeralds are sell to the final customer.
 
 ### Part1:
 
-![Emeralds supply chain process](https://github.com/Fer-Bonilla/emeralds-supplychain-dapp/blob/main/images/part1emeraldsprocess.png)
+![Emeralds supply chain process](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/part1emeraldsprocess.png)
 
 ### Part2
 
-![Emeralds supply chain process](https://github.com/Fer-Bonilla/emeralds-supplychain-dapp/blob/main/images/part2emeraldsprocess.png)
+![Emeralds supply chain process](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/part2emeraldsprocess.png)
 
 ### Part 1 description
 
@@ -69,7 +69,7 @@ The process starts with the emerald extraction performed by the miner in the min
 
 
 ### Product roapmap:
-![Product Roadmap](https://github.com/Fer-Bonilla/emeralds-supplychain-dapp/blob/main/images/product_roapmap.png)
+![Product Roadmap](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/product_roapmap.png)
 
 
 
@@ -83,22 +83,22 @@ To accomplish this task, we are going to use UML (Universal Modeling Language) t
 -	**Class model:** Express the data and functions needed in each contract.
  
 ### Activy diagram
-![Emeralds supply chain process](https://github.com/Fer-Bonilla/emeralds-supplychain-dapp/blob/main/uml/Activity_diagram.png)
+![Emeralds supply chain process](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/uml/Activity_diagram.png)
  
 ### Sequence diagram
- ![Emeralds supply chain process](https://github.com/Fer-Bonilla/emeralds-supplychain-dapp/blob/main/uml/Sequence_diagram.png)
+ ![Emeralds supply chain process](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/uml/Sequence_diagram.png)
   
 ### States diagram
-![Emeralds supply chain process](https://github.com/Fer-Bonilla/emeralds-supplychain-dapp/blob/main/uml/States_diagram.png)
+![Emeralds supply chain process](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/uml/States_diagram.png)
 
 ### Class diagram
-![Emeralds supply chain process](https://github.com/Fer-Bonilla/emeralds-supplychain-dapp/blob/main/uml/Class_diagram.png)
+![Emeralds supply chain process](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/uml/Class_diagram.png)
  
 ### Contracts implementation
 
 To understand project class organization and contract implementation we need to consider the external libraries and folders. This is presented in the next diagram:
 
-![Emeralds supply chain process](https://github.com/Fer-Bonilla/emeralds-supplychain-dapp/blob/main/uml/Contracts_implementation.png)
+![Emeralds supply chain process](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychainp/blob/main/uml/Contracts_implementation.png)
  
 ## Project write-up - Libraries
 
@@ -161,12 +161,276 @@ To deploy the contratcs on Kovan network, it's neccessary setup the truffle-conf
 
 Your terminal should look something like this:
 
-![Ganache-cli](https://github.com/Fer-Bonilla/emeralds-supplychain-dapp/blob/main/images/ganache-cli.png)
+![Ganache-cli](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/ganache-cli.png)
+
+
+In a separate terminal window, Compile smart contracts:
+
+   ```
+   truffle compile
+   ```
+
+Your terminal should look something like this:
+
+   ```
+   Compiling your contracts...
+   ===========================
+   > Compiling @openzeppelin/contracts/access/AccessControl.sol
+   > Compiling @openzeppelin/contracts/access/Ownable.sol
+   > Compiling @openzeppelin\contracts\utils\Address.sol
+   > Compiling @openzeppelin\contracts\utils\Context.sol
+   > Compiling @openzeppelin\contracts\utils\EnumerableSet.sol       
+   > Compiling .\src\contracts\Migrations.sol
+   > Compiling .\src\contracts\emeraldaccesscontrol\CustodianRole.sol
+   > Compiling .\src\contracts\emeraldaccesscontrol\CustomerRole.sol 
+   > Compiling .\src\contracts\emeraldaccesscontrol\LaboratoryRole.sol
+   > Compiling .\src\contracts\emeraldaccesscontrol\ManufacturerRole.sol
+   > Compiling .\src\contracts\emeraldaccesscontrol\MinerRole.sol
+   > Compiling .\src\contracts\emeraldbase\Emerald.sol
+   > Compiling .\src\contracts\emeraldbase\EmeraldProperties.sol
+   > Compiling .\src\contracts\emeraldbase\EmeraldStates.sol
+   > Compiling .\src\contracts\emeraldbase\SupplyChain.sol
+   > Compiling .\src\contracts\emeraldaccesscontrol\CustodianRole.sol
+   > Compiling .\src\contracts\emeraldaccesscontrol\CustomerRole.sol
+   > Compiling .\src\contracts\emeraldaccesscontrol\LaboratoryRole.sol
+   > Compiling .\src\contracts\emeraldaccesscontrol\ManufacturerRole.sol
+   > Compiling .\src\contracts\emeraldaccesscontrol\MinerRole.sol
+   > Compiling .\src\contracts\emeraldbase\Emerald.sol
+   > Compiling .\src\contracts\emeraldbase\EmeraldProperties.sol
+   > Compiling .\src\contracts\emeraldbase\EmeraldStates.sol
+   > Compilation warnings encountered:
+
+   > Artifacts written to C:\GitHub\emerald-ethdapp-supplychain\src\abis
+   > Compiled successfully using:
+      - solc: 0.7.6+commit.7338295f.Emscripten.clang
+
+   ```
+
+Migrate smart contracts to the locally running blockchain, ganache-cli:
+
+   ```
+   truffle migrate
+   ```
+
+Your terminal should look something like this:
+
+   ```
+   Starting migrations...
+   ======================
+   > Network name:    'development'
+   > Network id:      1614124968336
+   > Block gas limit: 6721975 (0x6691b7)
+
+
+   1_initial_migration.js
+   ======================
+
+      Deploying 'Migrations'
+      ----------------------
+      > transaction hash:    0xe5660d06a6b6b6ef39d94e57cca74c19f088c14b735c62f55ef7a6a27860ddcc
+      > Blocks: 0            Seconds: 0
+      > contract address:    0xFEeCfF2CB7d6f3BfcBE5fa41c49c8fB642f2dDbF
+      > block number:        1
+      > block timestamp:     1614125009
+      > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
+      > balance:             99.9966302
+      > gas used:            168490 (0x2922a)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.0033698 ETH
+
+
+      > Saving migration to chain.
+      > Saving artifacts
+      -------------------------------------
+      > Total cost:           0.0033698 ETH
+
+
+   2_deploy_contracts.js
+   =====================
+
+      Deploying 'CustomerRole'
+      ------------------------
+      > transaction hash:    0xb1e509635ac2adee9d6a6201d05a5b959981738d72e2a5d5f216d90e7f72d219
+      > Blocks: 0            Seconds: 0
+      > contract address:    0xf2ee0b0Cdcae5013930B92c0Ba54F7F7f1933613
+      > block number:        3
+      > block timestamp:     1614125011
+      > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
+      > balance:             99.98244272
+      > gas used:            667095 (0xa2dd7)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.0133419 ETH
+
+
+      Deploying 'CustodianRole'
+      -------------------------
+      > transaction hash:    0xfc45fe47124a1aaa5038287e91dbda90b0eb9a4da4999f3ed7be3c89dee47bf2
+      > Blocks: 0            Seconds: 0
+      > contract address:    0xd22De155853B67cE1cA3693FBE52EE958f755E7b
+      > block number:        4
+      > block timestamp:     1614125011
+      > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
+      > balance:             99.96910154
+      > gas used:            667059 (0xa2db3)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.01334118 ETH
+
+
+      Deploying 'LaboratoryRole'
+      --------------------------
+      > transaction hash:    0x1117d6dcc00bf46eb9741253e993937c9f7e95cfa49e0f595c5865342587c8fb
+      > Blocks: 0            Seconds: 0
+      > contract address:    0x79051A2faFcC216A55d3897474012145d158F170
+      > block number:        5
+      > block timestamp:     1614125012
+      > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
+      > balance:             99.9557606
+      > gas used:            667047 (0xa2da7)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.01334094 ETH
+
+
+      Deploying 'ManufacturerRole'
+      ----------------------------
+      > transaction hash:    0x8017b82f7c3dab0251190366fc517acd45350b830be9363b66b9b8c4d5e8d25f
+      > Blocks: 0            Seconds: 0
+      > contract address:    0xA65B87754E0A73860AA6B7eb6E95D79CD2d893d2
+      > block number:        6
+      > block timestamp:     1614125013
+      > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
+      > balance:             99.94241702
+      > gas used:            667179 (0xa2e2b)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.01334358 ETH
+
+
+      Deploying 'MinerRole'
+      ---------------------
+      > transaction hash:    0x4680ae2ba9cf84db07f24c6e81127d6abf5d6084b3a91d5ec1c05c83b92b7f7a
+      > Blocks: 0            Seconds: 0
+      > contract address:    0x23E2b13b08a22E9eEe431F862eC7A17aB1E99B98
+      > block number:        7
+      > block timestamp:     1614125013
+      > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
+      > balance:             99.9293857
+      > gas used:            651566 (0x9f12e)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.01303132 ETH
+
+
+      Deploying 'Emerald'
+      -------------------
+      > transaction hash:    0x8624a690558d1e10d15aa4bdf2570eab432f0255b689505031879bae91991a87
+      > Blocks: 0            Seconds: 0
+      > contract address:    0xe4E12044b5BC8461eb83bb485E6da809155c244D
+      > block number:        8
+      > block timestamp:     1614125014
+      > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
+      > balance:             99.9103127
+      > gas used:            953650 (0xe8d32)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.019073 ETH
+
+
+      Deploying 'EmeraldProperties'
+      -----------------------------
+      > transaction hash:    0x4b93685b2b06942a85b145778e5a664042a77e783f0e6bc98fef92d3dc2099ff
+      > Blocks: 0            Seconds: 0
+      > contract address:    0xD5B4fc545dcD14831A6cF5c1C55cAd1f89e51A1f
+      > block number:        9
+      > block timestamp:     1614125014
+      > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
+      > balance:             99.90455684
+      > gas used:            287793 (0x46431)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.00575586 ETH
+
+
+      Deploying 'EmeraldStates'
+      -------------------------
+      > transaction hash:    0x0f90abd3532641bc4d5cbec94bad3691bf528e002878cae7bbd17740f40d82c7
+      > Blocks: 0            Seconds: 0
+      > contract address:    0x23330Ef92b2fc1d9a48eBB246F868142C5188740
+      > block number:        10
+      > block timestamp:     1614125015
+      > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
+      > balance:             99.90321552
+      > gas used:            67066 (0x105fa)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.00134132 ETH
+
+
+      Deploying 'SupplyChain'
+      -----------------------
+      > transaction hash:    0xc2c2c2f43e8c6757fd8ceb4de95b1d0965efd437414030da5debfde68db7fcd5
+      > Blocks: 0            Seconds: 0
+      > contract address:    0x4E89f8aa1791173F5a8FfB21e390eaC6bB7427cc
+      > block number:        11
+      > block timestamp:     1614125016
+      > account:             0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
+      > balance:             99.79052754
+      > gas used:            5634399 (0x55f95f)
+      > gas price:           20 gwei
+      > value sent:          0 ETH
+      > total cost:          0.11268798 ETH
+
+
+      > Saving migration to chain.
+      > Saving artifacts
+      -------------------------------------
+      > Total cost:          0.20525708 ETH
+
+
+   Summary
+   =======
+   > Total deployments:   10
+   > Final cost:          0.20862688 ETH
+   ```
+
+Test smart contracts:
+
+   ```
+   truffle test
+   ```
+
+All tests should pass.
+
+![Truffle test](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/truffle-test.png)
+
+
+In a separate terminal window, launch the DApp:
+
+   ```
+   npm run start
+   ```
+
+In the web browser you can go to:
+
+   ```
+   http://localhost:3000/
+   ```
+![Dapp](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/dapp-localhost.png)
+
+You can interact with the Suppluchain contract
+
+
+## Deploying contracts to kovan test network
+
 
 **The adress for the supplychaon contract on the rinkeby network is:** 0x27D8D15CbC94527cAdf5eC14B69519aE23288B95
 **Link to Etherscan:** https://kovan.etherscan.io/tx/0x7a984f8179eb26fafe67d6620f5412e603189c0d02317599d522fac8c54f0cb8
 
-### Deploying migrations
+The console outpuy for the migration looks like:
+
 ```
    ======================
    > Network name:    'kovan'
@@ -351,83 +615,6 @@ Summary
 
 ```
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-Please make sure you've already installed ganache-cli, Truffle and enabled MetaMask extension in your browser.
-
-```
-Give examples (to be clarified)
-```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Clone this repository:
-
-```
-git clone https://github.com/udacity/nd1309/tree/master/course-5/project-6
-```
-
-Change directory to ```project-6``` folder and install all requisite npm packages (as listed in ```package.json```):
-
-```
-cd project-6
-npm install
-```
-
-Launch Ganache:
-
-```
-ganache-cli -m "spirit supply whale amount human item harsh scare congress discover talent hamster"
-```
-
-Your terminal should look something like this:
-
-![truffle test](images/ganache-cli.png)
-
-In a separate terminal window, Compile smart contracts:
-
-```
-truffle compile
-```
-
-Your terminal should look something like this:
-
-![truffle test](images/truffle_compile.png)
-
-This will create the smart contract artifacts in folder ```build\contracts```.
-
-Migrate smart contracts to the locally running blockchain, ganache-cli:
-
-```
-truffle migrate
-```
-
-Your terminal should look something like this:
-
-![truffle test](images/truffle_migrate.png)
-
-Test smart contracts:
-
-```
-truffle test
-```
-
-All 10 tests should pass.
-
-![truffle test](images/truffle_test.png)
-
-In a separate terminal window, launch the DApp:
-
-```
-npm run dev
-```
-
 ## Built With
 
 * [Ethereum](https://www.ethereum.org/) - Ethereum is a decentralized platform that runs smart contracts
@@ -435,10 +622,6 @@ npm run dev
 to make the web faster, safer, and more open.
 * [Truffle Framework](http://truffleframework.com/) - Truffle is the most popular development framework for Ethereum with a mission to make your life a whole lot easier.
 
-
-## Authors
-
-See also the list of [contributors](https://github.com/your/project/contributors.md) who participated in this project.
 
 ## Acknowledgments
 
