@@ -486,7 +486,7 @@ You can use the Manufacturer operations if you have the manufacturer role. You n
 
 **6 Customer operations:**
 
-![Authorization](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/customer-daap.png)
+![Authorization](https://github.com/Fer-Bonilla/emerald-ethdapp-supplychain/blob/main/images/customer-dapp.png)
 
 You can use the Customer operations if you have the customer role. You need to follow the sequence describe in the UML diagramas.
 
